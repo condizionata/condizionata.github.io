@@ -509,7 +509,7 @@ html {
   appearance: none;
 }
 
-.button {
+/* .button {
   position: absolute;
   z-index: 999;
   width: 50px;
@@ -522,6 +522,50 @@ html {
   align-items: center;
   top: -12px;
   right: 5vw;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(90deg);
+    transition: all 0.4s ease;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.4s ease;
+  }
+} */
+
+
+.button {
+  position: sticky;
+display:block;
+height: 3em;
+width: 3em;
+line-height: 3em !important;
+border-radius: 50%;
+color: white;
+margin-left: auto;
+margin-right: 1em;
+margin-bottom: auto;
+margin-right: 1em;
+right: 0.5em;
+bottom: 1em;
+border: 1px solid var(--red);
+background-color: var(--red);
+box-shadow: 1px 1px 5px 0px var(--black);
+place-items: center;
+text-align: center;
+z-index: 500;
+
+justify-content: center;
+align-items: center;
 
   &:before {
     position: absolute;
@@ -579,7 +623,7 @@ html {
   }
 }
 
-#toggle:checked ~ .nav_mobile2 {
+/* #toggle:checked ~ .nav_mobile2 {
   display: block;
   opacity: 1;
   transform: translateY(0%);
@@ -591,7 +635,7 @@ html {
 
 #toggle:checked ~ .button:after {
   transform: rotate(135deg);
-}
+} */
 
 /* @media (max-width: 640px) {
   .container {
