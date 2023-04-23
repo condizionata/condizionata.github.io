@@ -53,6 +53,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     display: block !important;
+    position: relative;
   }
 
   body .nav_desktop {
@@ -315,6 +316,65 @@ html {
   box-shadow: 1px 1px 5px 0px var(--gray);
   place-items: center;
   text-align: center;
+  z-index: 90;
+}
+
+.floating_btn {
+  /* position: absolute; */
+  position: absolute;
+  /* display:block; */
+  height: 1em;
+  width: 1em;
+  line-height: 1em !important;
+  border-radius: 50%;
+  color: white;
+  right: 0.5em;
+  bottom: 1em;
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  box-shadow: 1px 1px 5px 0px var(--gray);
+  place-items: center;
+  text-align: center;
+  z-index: 200;
+}
+.floating_btn2 {
+  /* position: absolute; */
+  position: sticky;
+  display:block;
+  height: 3em;
+  width: 3em;
+  line-height: 3em !important;
+  border-radius: 50%;
+  color: white;
+  margin-left: auto;
+  margin-right: 1em;
+  margin-bottom: auto;
+  margin-right: 1em;
+  right: 0.5em;
+  bottom: 1em;
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  box-shadow: 1px 1px 5px 0px var(--black);
+  place-items: center;
+  text-align: center;
+  z-index: 500;
+}
+
+.btn_down {
+  position: absolute;
+  display:block;
+  height: 1em;
+  width: 1em;
+  line-height: 1em !important;
+  border-radius: 50%;
+  color: white;
+  top: -0.5em;
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  box-shadow: 1px 1px 5px 0px var(--black);
+  place-items: center;
+  text-align: center;
+  z-index: 50;
 }
 
 .trailer {
@@ -326,6 +386,11 @@ html {
   font-weight: bold;
   background:  var(--black); /* var(--white); */
   /* #eee; */
+
+  position: relative !important;
+  margin-top: 0vh;
+  box-shadow: 1px 1px 5px 0px var(--black);
+
 }
 
 .image_row {
@@ -365,7 +430,7 @@ html {
 
 .ilaimage{
   overflow: hidden; 
-  z-index: 10; 
+  z-index: 100; 
   position: absolute; 
   top: 30%;
   height: 60vh; max-width: 80%;
@@ -374,9 +439,10 @@ html {
 #second {
   width: 100%;
   padding: 50px 20px 50px 20px; /* top right bottom left*/
-    box-sizing: border-box;
+  box-sizing: border-box;
   place-content: center;
   text-align: center;
+  /* position: relative !important; */
 }
 
 .dot {
@@ -542,6 +608,7 @@ html {
   .header_mobile { display: none;}
   .container { display: none;}
   .header_desktop { display: block;}
+  .floating_btn2 {display: none;}
   .dot {
       width: 60vw;
           height: 60vw;
@@ -561,6 +628,7 @@ html {
   .header_mobile { display: block;}
   .header_desktop { display: none;}
   .container { display: block;}
+  .floating_btn2 {display: block;}
   .title {
     top: 5%;
     margin-bottom: 20vh;
