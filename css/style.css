@@ -37,6 +37,7 @@ html {
     padding: 0;
     scroll-behavior: smooth;
     background: var(--white);
+    display: block !important;
     /* background: var(--peach); */
     /* margin-left: calc(100vw - 100%); */
   }
@@ -51,6 +52,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: block !important;
   }
 
   body .nav_desktop {
@@ -96,6 +98,7 @@ html {
     /* #eee; */
   }
 
+
   .title {
     /* font-family: 'Rock Salt', cursive; */
     font-family: Consolas, Liberation Mono, Courier, monospace;
@@ -108,6 +111,7 @@ html {
     position: absolute;
     z-index: 9;
     top: 10%;
+    overflow-x:hidden;
   }
 
   .cards {
@@ -359,6 +363,14 @@ html {
   transform: scale(1.02);
 }
 
+.ilaimage{
+  overflow: hidden; 
+  z-index: 10; 
+  position: absolute; 
+  top: 30%;
+  height: 60vh; max-width: 80%;
+}
+
 #second {
   width: 100%;
   padding: 50px 20px 50px 20px; /* top right bottom left*/
@@ -368,10 +380,18 @@ html {
 }
 
 .dot {
-  height: 60vh;
-  aspect-ratio: 1 / 1;
-  max-width: 80%;
-  object-fit: contain;
+  /* height: 60vh; */
+  /* aspect-ratio: 1 / 1; */
+  /* max-width: 80%; */
+  /* object-fit: contain; */
+
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
   background-color: white;
   border-radius: 50%;
   display: inline-block;
@@ -460,14 +480,15 @@ html {
   opacity: 0;
   transition: all 0.4s ease-in-out;
   background: #fff;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  border-radius: 5px;
+  border-radius: 0px;
   transform: translateY(0%);
   box-shadow: 2px 3px 10px 0 rgba(81, 81, 81, 0.1);
   border: 1px solid #e4e4e4;
   padding: 10px;
   text-align: center;
+  display: none;
 
   ul {
     margin: 0;
@@ -493,8 +514,9 @@ html {
 }
 
 #toggle:checked ~ .nav_mobile2 {
+  display: block;
   opacity: 1;
-  transform: translateY(+10%);
+  transform: translateY(0%);
 }
 
 #toggle:checked ~ .button:before {
@@ -520,6 +542,11 @@ html {
   .header_mobile { display: none;}
   .container { display: none;}
   .header_desktop { display: block;}
+  .dot {
+      width: 60vw;
+          height: 60vw;
+          max-height: 60vh;
+          max-width: 60vh;}
 
   .image_column {
     flex: 10%;
@@ -534,6 +561,18 @@ html {
   .header_mobile { display: block;}
   .header_desktop { display: none;}
   .container { display: block;}
+  .title {
+    top: 5%;
+    margin-bottom: 20vh;
+  }
+  .ilaimage{
+    top: 40%;}
+  .dot {
+      width: 90vw;
+          height: 90vw;
+          max-height: 90vh;
+          max-width: 90vh;
+        top:20%}
 
   .image_column {
     flex: 25%;
