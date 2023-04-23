@@ -368,7 +368,8 @@ html {
 
 .dot {
   height: 60vh;
-  width: 60vh;
+  aspect-ratio: 1 / 1;
+  max-width: 80%;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
