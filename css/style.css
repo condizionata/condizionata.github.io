@@ -13,8 +13,8 @@
 body {
   margin: 0;
   /* font-family: Helvetica, sans-serif; */
-  /* font-family: "Caveat", sans-serif; */
-  font-family: "Gloria Hallelujah", sans-serif;
+  font-family: "Caveat", sans-serif;
+  /* font-family: "Gloria Hallelujah", sans-serif; */
   /* background-color: #f4f4f4; */
   padding: 0;
   margin: 0; /* Remove default margins */
@@ -61,12 +61,14 @@ h2 {
   position: absolute;
   top: 0;
   left: 10vw;
+  width: 500px;
 }
 
 .bottom-right {
   position: absolute;
-  bottom: 0;
+  bottom: 2rem;
   right: 10vw;
+  width: 400px;
 }
 
 .element {
@@ -90,6 +92,7 @@ a {
   width: 100%;
   z-index: 3;
   height: 4.5em;
+  font-family: "Gloria Hallelujah", sans-serif;
 }
 
 .header ul {
@@ -180,7 +183,6 @@ a {
 
 .header .menu-btn:checked ~ .menu {
   max-height: 100vh;
-  /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
   box-shadow: 1px 1px 0px 0 rgba(0,0,0,.1);
 }
 
@@ -198,7 +200,7 @@ a {
 
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
+  top: -5px;
 }
 
 
@@ -258,33 +260,12 @@ a {
   transition: opacity 1s ease-in-out;
 }
 
-
-.ciaotext {
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: 1rem;
-  font-weight: bold;
-  font-size: 4em;
-  color: var(--red);
-  opacity: 20%;
-  /* max-width: 80%; */
-}
-
-.ilariatext { 
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: 1rem;
-  font-weight: bold;
-  font-size: 4em;
-  color: var(--red);
-  /* max-width: 80%; */
-}
-
 .page-container {
   /* display: flex; */
   /* flex-direction: column; Stacks header and page vertically */
   min-height: 100vh;  /* Ensures container fills viewport height */
-  padding: 1rem;  
+  /* padding: 1rem;   */
+  padding: 3rem 0 1rem 0;
   background-color: var(--lightgrey); 
   /* margin-top: 100px; */
 }
@@ -298,13 +279,16 @@ a {
   border-radius: 5px;  /* Rounded corners for the page */
   margin: 0 auto;  /* Centers the page horizontally */
   max-width: 600px;  /* Adjust maximum width for laptops */
-  margin-top: 5rem;
+  margin-top: 3rem;
 
 }
 
 /* Responsive design for smartphones */
 
 @media only screen and (max-width: 768px) {
+  .page-container {
+    padding: 1rem 0 0 0;
+  }
   .page {
     max-width: 100%;  /* Full width on smartphones */
   }

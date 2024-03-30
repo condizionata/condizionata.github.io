@@ -1,6 +1,6 @@
 // const imageContainer = document.getElementById('gif_ila');
 const currentImage =document.getElementById('gif_ila');
-const images = ['assets/silouette_frames/0.png', 'assets/silouette_frames/1.png', 'assets/silouette_frames/2.png', 'assets/silouette_frames/3.png', 'assets/silouette_frames/4.png', 'assets/silouette_frames/5.png', 'assets/silouette_frames/6.png', 'assets/silouette_frames/7.png', 'assets/silouette_frames/8.png', 'assets/silouette_frames/9.png']; // Replace with your image paths
+const images = ['assets/index/silouette_base/0.png', 'assets/index/silouette_base/1.png', 'assets/index/silouette_base/2.png', 'assets/index/silouette_base/3.png', 'assets/index/silouette_base/4.png', 'assets/index/silouette_base/5.png', 'assets/index/silouette_base/6.png', 'assets/index/silouette_base/7.png', 'assets/index/silouette_base/8.png', 'assets/index/silouette_base/9.png']; // Replace with your image paths
 let currentImageIndex = 0;
 
 function changeImage() {
@@ -21,4 +21,4 @@ function changeImage() {
 setInterval(changeImage, 400);
 
 // Optionally start with a hidden image
-currentImage.style.opacity = 0;
+currentImage.style.opacity = 1;
