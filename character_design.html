@@ -19,24 +19,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-  
+  <meta name="theme-color" content="#92301f">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $('#header').load('header.html')
+    });
+  </script>
 </head>
 
 <body>
-
-  <!-- <div id="header"></div> -->
-  <header class="header">
-    <a href="index.html" class="logo"><image style="height: 1em; padding: 0.25em;" src="assets/logo.svg"></image></a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="graphic_novel.html"><i class="iconoir-favourite-book icon"></i> Graphic novel</a></li>
-      <li><a href="caricature.html"><i class="iconoir-user-square icon"></i> Caricature</a></li>
-      <li><a href="character_design.html"><i class="iconoir-user-love icon"></i> Character design</a></li>
-      <li><a href="creazioni.html"><i class="iconoir-shopping-bag icon"></i> Creazioni</a></li>
-      <!-- <li><a href="contatti.html"><i class="iconoir-instagram icon"></i> Contatti</a></li> -->
-    </ul>
-  </header>
+  <div id="header"></div>
 
   <main>
     <div class="page-container">

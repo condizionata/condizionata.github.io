@@ -312,7 +312,7 @@ a {
   padding: 1em 3em;
   border-radius: 5px;  /* Rounded corners for the page */
   margin: 0 auto;  /* Centers the page horizontally */
-  max-width: 1000px;  /* Adjust maximum width for laptops */
+  max-width: 500px;  /* Adjust maximum width for laptops */
   /* margin-top: 3rem; */
 
 }
@@ -329,7 +329,6 @@ a {
 
 .bubble {
   width: 100%;
-  /* max-height: 30vh; */
 }
 
 .card {
@@ -348,4 +347,20 @@ a {
 
 @media (min-width: 600px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 
+.scaletta {
+
+} */
+
+.scaletta img {
+  filter: grayscale(50%);  /* Make image black and white */
+  -webkit-filter: grayscale(50%);  /* For Safari compatibility */
+  transition: filter 0.2s ease-in-out;  /* Add smooth transition */
+}
+
+.scaletta img:hover {
+  filter: none;  /* Remove grayscale filter */
+  -webkit-filter: grayscale(0);  /* For Safari compatibility */
 }
