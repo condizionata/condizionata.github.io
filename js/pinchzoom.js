@@ -1,6 +1,7 @@
 var myElement = document.getElementById("img1");
 let pz = new PinchZoom(myElement);
 pz.enable();
+
 // var pz = new PinchZoom.default(myElement, {
 //     draggableUnzoomed: false,
 //     minZoom: 1,
