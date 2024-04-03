@@ -79,23 +79,39 @@ h2 {
   position: absolute;
   top: 0;
   left: 10vw;
-  width: 500px;
+  /* width: 500px; */
+  /* width: 50vw; */
+  max-height: 80vh;
+  max-width: 50vw;
 }
 
 .bottom-right {
   position: absolute;
   bottom: 2rem;
   right: 10vw;
-  width: 400px;
+  /* width: 400px; */
+  /* width: 40vw; */
+  max-height: 80vh;
 }
 
 .element {
   /* min-width: 50vw; */
   margin-top: var(--header-size);
-  max-width: 80vw;
+  /* max-width: 80vw;
   max-height: (70vh - var(--header-size));
-  height: (70vh - var(--header-size));
+  height: (70vh - var(--header-size)); */
 }
+
+@media screen and (orientation:portrait) {
+  .top-left {
+    max-width: 80vw;
+  }
+  .bottom-right {
+    max-height: 60vh;
+  }
+}
+
+
 
 a {
   color: #444444;
