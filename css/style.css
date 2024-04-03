@@ -10,10 +10,25 @@
   --lightgrey: #fffafa;
 }
 
+@font-face {
+  font-family: customFont;
+  src:url("../fonts/storyteller.ttf");
+  /* src:url("../fonts/i_love_pugs.ttf"); */
+  /* src:url("../fonts/kalam.ttf"); */
+}
+
+* {
+  font-family: customFont !important;
+  /* font-family: customFont; */
+  text-transform:uppercase;
+}
+
 body {
   margin: 0;
   /* font-family: Helvetica, sans-serif; */
-  font-family: "Caveat", sans-serif;
+
+  /* font-family: "Caveat", sans-serif; */
+
   /* font-family: "Gloria Hallelujah", sans-serif; */
   /* background-color: #f4f4f4; */
   padding: 0;
