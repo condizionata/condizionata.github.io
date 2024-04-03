@@ -7,8 +7,8 @@ function changeImage() {
 //   const currentImage = imageContainer.querySelector('img');
     const currentImage =document.getElementById('gif_ila');
   
-  // Update opacity for smooth transition
-  currentImage.style.opacity = 0.;
+    // Update opacity for smooth transition
+    currentImage.style.opacity = 0;
   
 //   currentImage.addEventListener('transitionend', () => {
     currentImage.src = images[currentImageIndex];
