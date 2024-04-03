@@ -109,7 +109,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
-  height: 4.5em;
+  height: 4em;
   font-family: "Gloria Hallelujah", sans-serif;
   /* overflow-y: hidden;  */
 }
