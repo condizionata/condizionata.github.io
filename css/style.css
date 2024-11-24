@@ -12,7 +12,8 @@
 
 @font-face {
   font-family: customFont;
-  src:url("../fonts/storyteller.ttf");
+  /* src:url("../fonts/storyteller.ttf"); */
+  src:url("../fonts/Ilaria.ttf");
   /* src:url("../fonts/i_love_pugs.ttf"); */
   /* src:url("../fonts/kalam.ttf"); */
 }
@@ -51,12 +52,14 @@ main {
 
 h1 {
   color: var(--red);
-  font-weight: normal;
+  /* font-weight: normal; */
+  font-weight: bold;
 }
 
 h2 {
   color: #444444;
-  font-weight: normal;
+  font-weight: bold;
+  /* font-weight: normal; */
 }
 
 .opera {
